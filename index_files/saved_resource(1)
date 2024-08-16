@@ -1,0 +1,247 @@
+/*!
+    TAG V6.02.7333-14+ubuntu22041+debsuryorg+1, smct.tag-bluedoors.co
+    Copyright 2012-2024 intent.ly Global Ltd
+*/if(typeof window.$smctResources !== 'undefined') {
+    console.warn('Cannot load Tag Resources more than once...');
+} else {
+    window.$smctResources = function() {
+        var urls = {
+            tag_url : 'https://js.smct.io/t/tag-v6.02.js',
+            overlays_url : 'https://js.smct.io/o/overlays-v6.02.js',
+            overlays_data_url : 'https://smct.co/ov5/load/',
+            smc_debug_url :  '',
+            client_debug_url : 'https://js.smct.io/dp/clientDebug-v2.00.js',
+            basket_backup_script : '',
+            basket_backup_endpoint : '',
+            selector_tool_script : '',
+            selector_tool_endpoint : '',
+            smarter_codes_script: '',
+            smarter_codes_endpoint: '',
+            smc_jq : 'https://js.smct.io/jq/smcJQ-v3.4.1.js',
+            ls_endpoint : 'https://ls.smct.io/lse1.3.html',
+            notification_app : '',
+            notification_checker : '',
+            px2a_source_url: 'https://js.smct.io/e/events-1.6.0.min.js',
+            px2b_endpoint_url: 'https://events.smct.co/',
+            
+            host : 'https://smct.co/',
+            pxt_domain : 'https://ep.smct.co/',
+            tag_data_url : 'https://smct.co/tm/data/',
+            overlays_engage_url : 'https://ep.smct.co/ov4/e/',
+            insights_url : 'https://ep.smct.co/insights/',
+            url_track : 'https://ep.smct.co/ut/',
+            client_debug_data : 'https://smct.co/cldbData/',
+        }
+            var sri = {
+                tag_url : '',
+                overlays_url : '',
+                smc_debug_url :  '',
+                client_debug_url : '',
+                basket_backup_script : '',
+                selector_tool_script : '',
+                smarter_codes_script: '',
+                smc_jq : '',
+                notification_app : '',
+                px2a_source_url: '',
+                px2a_fingerprint_url: '',
+            };
+        
+        var getURL = function(key, additional) {
+            return urls[key];
+        };
+
+        var getSRI = function(key, additional) {
+            return sri[key];
+        };
+
+        var getTagLoadedTime = function() {
+            var microtime = 1723747948.048;
+            return Math.round(microtime*1000);
+        };
+
+        /* Deprecated */
+        var runCode = function(key, isDebug) {
+            return false;
+        };
+        
+        return {
+            getURL : getURL,
+            getSRI : getSRI,
+            getTagLoadedTime : getTagLoadedTime,
+            runCode : runCode,
+            tryer: function() {
+                return false;
+            },
+            staticFiles : 0
+        };}();
+    }if(typeof window.$smctData !== 'undefined') {
+    console.warn('Cannot load Tag Data more than once...');
+} else {
+	window.$smctData = {
+			a:1,
+			b:1,
+			h:'https://smct.co/',
+		o:'eyJ2ZXJzaW9uIjoiNi4wMiIsImlkIjo1Nzc5LCJuYW1lIjoiYmx1ZWRvb3JzLmNvIiwiY3NzX2FuaW1zIjoiLnNtY3QtYW5pbWF0ZWR7LXdlYmtpdC1hbmltYXRpb24tZHVyYXRpb246MXM7YW5pbWF0aW9uLWR1cmF0aW9uOjFzOy13ZWJraXQtYW5pbWF0aW9uLWZpbGwtbW9kZTpib3RoO2FuaW1hdGlvbi1maWxsLW1vZGU6Ym90aH0uc21jdC1hbmltYXRlZC5zbWN0LWluZmluaXRley13ZWJraXQtYW5pbWF0aW9uLWl0ZXJhdGlvbi1jb3VudDppbmZpbml0ZTthbmltYXRpb24taXRlcmF0aW9uLWNvdW50OmluZmluaXRlfS5zbWN0LWFuaW1hdGVkLnNtY3QtaGluZ2V7LXdlYmtpdC1hbmltYXRpb24tZHVyYXRpb246MnM7YW5pbWF0aW9uLWR1cmF0aW9uOjJzfS5zbWN0LWFuaW1hdGVkLnNtY3QtYm91bmNlSW4sLnNtY3QtYW5pbWF0ZWQuc21jdC1ib3VuY2VPdXQsLnNtY3QtYW5pbWF0ZWQuc21jdC1mbGlwT3V0WCwuc21jdC1hbmltYXRlZC5zbWN0LWZsaXBPdXRZey13ZWJraXQtYW5pbWF0aW9uLWR1cmF0aW9uOi43NXM7YW5pbWF0aW9uLWR1cmF0aW9uOi43NXN9QC13ZWJraXQta2V5ZnJhbWVzIHNtY3QtcnViYmVyQmFuZHswJXstd2Via2l0LXRyYW5zZm9ybTpzY2FsZVgoMSk7dHJhbnNmb3JtOnNjYWxlWCgxKX0zMCV7LXdlYmtpdC10cmFuc2Zvcm06c2NhbGUzZCgxLjI1LC43NSwxKTt0cmFuc2Zvcm06c2NhbGUzZCgxLjI1LC43NSwxKX00MCV7LXdlYmtpdC10cmFuc2Zvcm06c2NhbGUzZCguNzUsMS4yNSwxKTt0cmFuc2Zvcm06c2NhbGUzZCguNzUsMS4yNSwxKX01MCV7LXdlYmtpdC10cmFuc2Zvcm06c2NhbGUzZCgxLjE1LC44NSwxKTt0cmFuc2Zvcm06c2NhbGUzZCgxLjE1LC44NSwxKX02NSV7LXdlYmtpdC10cmFuc2Zvcm06c2NhbGUzZCguOTUsMS4wNSwxKTt0cmFuc2Zvcm06c2NhbGUzZCguOTUsMS4wNSwxKX03NSV7LXdlYmtpdC10cmFuc2Zvcm06c2NhbGUzZCgxLjA1LC45NSwxKTt0cmFuc2Zvcm06c2NhbGUzZCgxLjA1LC45NSwxKX10b3std2Via2l0LXRyYW5zZm9ybTpzY2FsZVgoMSk7dHJhbnNmb3JtOnNjYWxlWCgxKX19QGtleWZyYW1lcyBzbWN0LXJ1YmJlckJhbmR7MCV7LXdlYmtpdC10cmFuc2Zvcm06c2NhbGVYKDEpO3RyYW5zZm9ybTpzY2FsZVgoMSl9MzAley13ZWJraXQtdHJhbnNmb3JtOnNjYWxlM2QoMS4yNSwuNzUsMSk7dHJhbnNmb3JtOnNjYWxlM2QoMS4yNSwuNzUsMSl9NDAley13ZWJraXQtdHJhbnNmb3JtOnNjYWxlM2QoLjc1LDEuMjUsMSk7dHJhbnNmb3JtOnNjYWxlM2QoLjc1LDEuMjUsMSl9NTAley13ZWJraXQtdHJhbnNmb3JtOnNjYWxlM2QoMS4xNSwuODUsMSk7dHJhbnNmb3JtOnNjYWxlM2QoMS4xNSwuODUsMSl9NjUley13ZWJraXQtdHJhbnNmb3JtOnNjYWxlM2QoLjk1LDEuMDUsMSk7dHJhbnNmb3JtOnNjYWxlM2QoLjk1LDEuMDUsMSl9NzUley13ZWJraXQtdHJhbnNmb3JtOnNjYWxlM2QoMS4wNSwuOTUsMSk7dHJhbnNmb3JtOnNjYWxlM2QoMS4wNSwuOTUsMSl9dG97LXdlYmtpdC10cmFuc2Zvcm06c2NhbGVYKDEpO3RyYW5zZm9ybTpzY2FsZVgoMSl9fS5zbWN0LXJ1YmJlckJhbmR7LXdlYmtpdC1hbmltYXRpb24tbmFtZTpzbWN0LXJ1YmJlckJhbmQ7YW5pbWF0aW9uLW5hbWU6c21jdC1ydWJiZXJCYW5kfUAtd2Via2l0LWtleWZyYW1lcyBzbWN0LXNoYWtlezAlLHRvey13ZWJraXQtdHJhbnNmb3JtOnRyYW5zbGF0ZVooMCk7dHJhbnNmb3JtOnRyYW5zbGF0ZVooMCl9MTAlLDMwJSw1MCUsNzAlLDkwJXstd2Via2l0LXRyYW5zZm9ybTp0cmFuc2xhdGUzZCgtMTBweCwwLDApO3RyYW5zZm9ybTp0cmFuc2xhdGUzZCgtMTBweCwwLDApfTIwJSw0MCUsNjAlLDgwJXstd2Via2l0LXRyYW5zZm9ybTp0cmFuc2xhdGUzZCgxMHB4LDAsMCk7dHJhbnNmb3JtOnRyYW5zbGF0ZTNkKDEwcHgsMCwwKX19QGtleWZyYW1lcyBzbWN0LXNoYWtlezAlLHRvey13ZWJraXQtdHJhbnNmb3JtOnRyYW5zbGF0ZVooMCk7dHJhbnNmb3JtOnRyYW5zbGF0ZVooMCl9MTAlLDMwJSw1MCUsNzAlLDkwJXstd2Via2l0LXRyYW5zZm9ybTp0cmFuc2xhdGUzZCgtMTBweCwwLDApO3RyYW5zZm9ybTp0cmFuc2xhdGUzZCgtMTBweCwwLDApfTIwJSw0MCUsNjAlLDgwJXstd2Via2l0LXRyYW5zZm9ybTp0cmFuc2xhdGUzZCgxMHB4LDAsMCk7dHJhbnNmb3JtOnRyYW5zbGF0ZTNkKDEwcHgsMCwwKX19LnNtY3Qtc2hha2V7LXdlYmtpdC1hbmltYXRpb24tbmFtZTpzbWN0LXNoYWtlO2FuaW1hdGlvbi1uYW1lOnNtY3Qtc2hha2V9QC13ZWJraXQta2V5ZnJhbWVzIHNtY3QtcHVsc2V7MCV7LXdlYmtpdC10cmFuc2Zvcm06c2NhbGVYKDEpO3RyYW5zZm9ybTpzY2FsZVgoMSl9NTAley13ZWJraXQtdHJhbnNmb3JtOnNjYWxlM2QoMS4wNSwxLjA1LDEuMDUpO3RyYW5zZm9ybTpzY2FsZTNkKDEuMDUsMS4wNSwxLjA1KX10b3std2Via2l0LXRyYW5zZm9ybTpzY2FsZVgoMSk7dHJhbnNmb3JtOnNjYWxlWCgxKX19QGtleWZyYW1lcyBzbWN0LXB1bHNlezAley13ZWJraXQtdHJhbnNmb3JtOnNjYWxlWCgxKTt0cmFuc2Zvcm06c2NhbGVYKDEpfTUwJXstd2Via2l0LXRyYW5zZm9ybTpzY2FsZTNkKDEuMDUsMS4wNSwxLjA1KTt0cmFuc2Zvcm06c2NhbGUzZCgxLjA1LDEuMDUsMS4wNSl9dG97LXdlYmtpdC10cmFuc2Zvcm06c2NhbGVYKDEpO3RyYW5zZm9ybTpzY2FsZVgoMSl9fS5zbWN0LXB1bHNley13ZWJraXQtYW5pbWF0aW9uLW5hbWU6c21jdC1wdWxzZTthbmltYXRpb24tbmFtZTpzbWN0LXB1bHNlfUAtd2Via2l0LWtleWZyYW1lcyBzbWN0LWZsYXNoezAlLDUwJSx0b3tvcGFjaXR5OjF9MjUlLDc1JXtvcGFjaXR5OjB9fUBrZXlmcmFtZXMgc21jdC1mbGFzaHswJSw1MCUsdG97b3BhY2l0eToxfTI1JSw3NSV7b3BhY2l0eTowfX0uc21jdC1mbGFzaHstd2Via2l0LWFuaW1hdGlvbi1uYW1lOnNtY3QtZmxhc2g7YW5pbWF0aW9uLW5hbWU6c21jdC1mbGFzaH0iLCJjb25maWciOnsidGFnUmVmcmVzaElEIjozMDc1NSwialF1ZXJ5Rm9yY2VMb2FkIjowLCJpZ25vcmVIYXNoIjoxLCJjYXNlU2Vuc2l0aXZlIjowLCJpbnNpZ2h0cyI6MCwiYmxvY2tJZnJhbWUiOjAsInB4VHJhY2tPZmYiOjAsInJ1bGVzVVRDIjowLCJmb3JjZU9uRGVidWciOjAsInB4QXBjIjoxLCJPdlJlcUludCI6MCwiRmlyc3RDaGFyQXNjaWlGaXgiOjAsImVuY29kZUNvb2tpZXMiOjEsInJlZkV4YWN0TWF0Y2giOjAsIm1pZ3JhdGVDb29raWVzVG9Mb2NhbFN0b3JhZ2UiOjEsImVuZm9yY2VTcmkiOjAsInRpbWVvdXQiOjMwMCwic2Nhbm5lclRpbWUiOjMwMCwiY29va2llTWF4QWdlRGF5cyI6IiIsIm92Q29va2llSGlzdG9yeSI6IiIsInNyY19jb19pbyI6ImF1dG8iLCJpbnNpZ2h0c19hdXRvIjoiIiwibHMzcmRwdHlVSUQiOjEsImR5bmFtaWNFbGVtZW50cyI6eyJEeW5hbWljQmFza2V0UmVhZHkiOnsiYWN0aXZlIjoxLCJleHBvcnQiOjEsImNvb2tpZVNlYXJjaCI6IiIsInJlYWRDdXN0b21WYXJPckZ1bmMiOiJEeW5hbWljQmFza2V0UmVhZHkiLCJzdHJpbmdzIjoiIiwidXJsQ29udGFpbnMiOjAsImh0bWxDb250YWlucyI6MCwic2VhcmNoRExPYmplY3QiOiIiLCJzZWFyY2hETEtleSI6IiIsInNlbGVjdG9yIjoiIiwidXNlTGFzdCI6MCwiY29va2llQmFja3VwIjowLCJ0eXBlIjoidGV4dCIsImF0dHIiOiIifX0sInJlZnMiOnsiODg3Ijp7InUiOiJnZHA9YWZmaWxpcmVkIiwiZCI6IjIifX0sImRiIjowLCJvdmVybGF5c191cmwiOiJodHRwczpcL1wvanMuc21jdC5pb1wvb1wvb3ZlcmxheXMtdjYuMDIuanMiLCJvdmVybGF5c19kYXRhX3VybCI6Imh0dHBzOlwvXC9zbWN0LmNvXC9vdjVcL2xvYWRcLyIsIm92ZXJsYXlzX2VuZ2FnZV91cmwiOiJodHRwczpcL1wvZXAuc21jdC5jb1wvb3Y0XC9lXC8iLCJpbnNpZ2h0c191cmwiOiJodHRwczpcL1wvZXAuc21jdC5jb1wvaW5zaWdodHNcLyIsImNsaWVudF9kZWJ1Z191cmwiOiJodHRwczpcL1wvanMuc21jdC5pb1wvZHBcL2NsaWVudERlYnVnLXYyLjAwLmpzIiwiY2xpZW50X2RlYnVnX2RhdGEiOiJodHRwczpcL1wvc21jdC5jb1wvY2xkYkRhdGFcLyIsImxzX2VuZHBvaW50IjoiaHR0cHM6XC9cL2xzLnNtY3QuaW9cL2xzZTEuMy5odG1sIiwidGFnX3ByZXZpZXciOiJkZWZhdWx0IiwicHh0X3ZlcnNpb24iOiIyYSIsInB4dF9pZGVudGl0eV9wb29sX2lkIjoiZXUtd2VzdC0xOjlhMjhjYmRlLTM4M2UtNGM1Yi1iZGRkLTNiMzdhOWE3ZDFiZSJ9LCJzcmNfY29faW8iOiJhdXRvIiwicnVsZXNMaXN0IjpbeyJydWxlbmFtZSI6Ik5ldyBWaXNpdG9yIENsaWNrIHRvIHJlZGlyZWN0IiwidXJscyI6eyJibGFja2xpc3QiOlsiXC9jaGVja291dD9fZ2E9Il0sIndoaXRlbGlzdCI6WyJcL2VzIl19LCJyZWZzIjp7ImJsYWNrbGlzdCI6Wzg4N10sIndoaXRlbGlzdCI6W119LCJsb2NzIjp7ImJsYWNrbGlzdCI6W10sIndoaXRlbGlzdCI6W119LCJkeW5CYXNrZXRNaW5RdHkiOiIiLCJ2aXNpdG9ycyI6Im5ldyIsIm5vdGlmaWNhdGlvbnNBY2NlcHRlZCI6ImFueSIsImR5bkJhc2tldFJlcXVpcmVkIjoib2ZmIiwicmVjb21taW5kZXJSZXF1aXJlZCI6Im9mZiIsImRlbGF5IjoiIiwicGFnZVZpZXdzIjoiIiwiZmlsdGVyIjoiIiwiZmlsdGVyR3JvdXAiOiIiLCJ0aW1lU3RhcnQiOiIiLCJ0aW1lRW5kIjoiIiwib3ZlcmxheXMiOnsiZGVza3RvcCI6eyJpZCI6MTE3NDAyfSwibW9iaWxlIjp7ImlkIjoxMTc0MDl9LCJ0YWJsZXQiOnsiaWQiOjExNzQwM319fSx7InJ1bGVuYW1lIjoiRXhpc3RpbmcgQ2xpY2sgdG8gUmVkaXJlY3QiLCJ1cmxzIjp7ImJsYWNrbGlzdCI6WyJcL2NoZWNrb3V0P19nYT0iXSwid2hpdGVsaXN0IjpbIlwvZXMiXX0sInJlZnMiOnsiYmxhY2tsaXN0IjpbODg3XSwid2hpdGVsaXN0IjpbXX0sImxvY3MiOnsiYmxhY2tsaXN0IjpbXSwid2hpdGVsaXN0IjpbXX0sImR5bkJhc2tldE1pblF0eSI6IiIsInZpc2l0b3JzIjoiZXhpc3RpbmciLCJub3RpZmljYXRpb25zQWNjZXB0ZWQiOiJhbnkiLCJkeW5CYXNrZXRSZXF1aXJlZCI6Im9mZiIsInJlY29tbWluZGVyUmVxdWlyZWQiOiJvZmYiLCJkZWxheSI6IiIsInBhZ2VWaWV3cyI6IiIsImZpbHRlciI6IiIsImZpbHRlckdyb3VwIjoiIiwidGltZVN0YXJ0IjoiIiwidGltZUVuZCI6IiIsIm92ZXJsYXlzIjp7ImRlc2t0b3AiOnsiaWQiOjExNzQxMH0sIm1vYmlsZSI6eyJpZCI6MTE3NDE3fSwidGFibGV0Ijp7ImlkIjoxMTc0MTV9fX1dLCJwbHVnaW5zIjpbXSwidXNlTG9jIjowLCJpcCI6IjY2LjIyNS4yMDkuMTM4IiwiaXBiIjpmYWxzZSwiZGV2aWNlIjpmYWxzZSwidCI6MC4wMDQwNDUsImxvY1NpZyI6IjFiZDE3ZTI3NWE3MjYwOWYzNjdkYzE5NTA3YmZhZDI3In0='
+	};
+}
+
+(function(w, d) {
+	var src_co_io = 'auto';
+	var tld = '';
+
+	if(src_co_io === 'co' || src_co_io === 'io') {
+		tld = src_co_io;
+		sessionStorage.setItem('smc_cdn_source', tld);
+	} else {
+		tld  = sessionStorage.getItem('smc_cdn_source');
+	}
+
+	var cspCheck = function(cb) {
+		if(tld !== null) {
+			cb();
+		} else {
+			tld = 'io';
+			var ioTest = new XMLHttpRequest();
+			ioTest.open('HEAD', 'https://js.smct.' + tld + '/csp/csp.js', true);
+			ioTest.send();
+			ioTest.onerror = function() {
+				tld = 'co'
+				var coTest = new XMLHttpRequest();
+				coTest.open('HEAD', 'https://js.smct.' + tld + '/csp/csp.js', true);
+				coTest.send();
+				coTest.onerror = function() {
+					tld = 'co';
+					cb();
+				}
+				coTest.onload = function() {
+					tld = 'co';
+					sessionStorage.setItem('smc_cdn_source', tld);
+					cb();
+				}
+			}
+			ioTest.onload = function() {
+				tld = 'io';
+				sessionStorage.setItem('smc_cdn_source', tld);
+				cb();
+			}
+		}
+	}
+
+	var addJS = function(scriptUrl, callback) {
+        var url = window.$smctResources.getURL(scriptUrl);
+        var sriValue = window.$smctResources.getSRI(scriptUrl);
+			if(url.indexOf('://l.smct') === -1 && url.indexOf('://dev.smct') === -1 && tld !== undefined) {
+				url = url.replace(/smct.(c|i)o/i, 'smct.' + tld);
+			}
+		var h = d.getElementsByTagName("head")[0],
+			j = d.createElement('script');
+		j.type = 'text/javascript';
+		j.src = url;
+		j.charset = 'utf-8';
+		h.appendChild(j);
+		j.onload = function() {
+			if(callback) {
+				callback();
+			}
+		};
+	}
+
+	try{
+		cspCheck(function cspChecker() {
+			addJS('tag_url', function addingJS() {
+				window.$smcCallCustomScripts = function() {
+					$smcT5.CustomScripts = {};
+					try {
+						$smcT5.CustomScripts.TagCode = function(){
+(function getBasketItem(){
+    const interval = setInterval(function() {  
+        getItem();             
+    }, 400);
+        const getItem = () => {
+        //  const img = document.querySelector('.cart-item__image-container');
+        const title = document.querySelector('.reservation-cart-container_roomRate a');
+        const price = document.querySelector('.price-summary_price');
+        const date = document.querySelector('.reservation-cart-container_dates ');
+        if (date && title && price){
+            const obj = {
+                // img: img.src,
+                date: date.innerText,
+                title: title.textContent.trim(),
+                price: price.textContent.trim()
+            };
+            const itemEncoded = btoa(encodeURIComponent(JSON.stringify(obj)));
+            $smcT5.CookieManager.create('smc_dyn_item_code', itemEncoded, 0);
+            $smcT5.LS.set('smc_dyn_item_ls', itemEncoded)
+        }   
+    };
+})();
+    
+    
+  (() => {
+    const interval = setInterval(function() {  
+        const cookie = $smcT5.CookieManager.read('smc_dyn_item_code');
+	    if (!cookie) setDynBasketFromLs();          
+    }, 400);
+	const setDynBasketFromLs = () => {
+		$smcT5.LS.get('smc_dyn_item_ls', (data) => {
+			if(data) {
+				$smcT5.CookieManager.create('smc_dyn_item_code', data);
+			}
+		});
+
+	}
+
+})();
+
+    // (function scanBasket(){
+    //     var searchForButton = setInterval(function(){
+    //         var items = document.querySelectorAll('.thumb-cards_container');
+    //         if (items) {
+    //             items.forEach(function (item) {
+    //             var button = item.querySelector('.thumb-cards_button');
+    //             var img = item.querySelector('img');
+    //             var title = item.querySelector('h2');
+    //             var startDate = document.querySelector(".reservation-cart-container_dates span")
+    //             var endDate = document.querySelector(".reservation-cart-container_dates span+span")
+    //             var price = item.querySelector('.thumb-cards_price');
+                
+    //             if (button) {
+    //                 button.addEventListener('click', function (e) {
+    //                     if (img && title && price) {
+    //                         var obj = {};
+    //                         obj.img = img.src;
+    //                         obj.title = title.textContent;
+    //                         obj.price = price.textContent;
+    //                         obj.startDate = startDate.textContent;
+    //                         obj.endDate = endDate.textContent;
+    //                         var itemEncoded = btoa(encodeURIComponent(JSON.stringify(obj)));
+    //                         $smcT5.CookieManager.create('smc_dyn_item', itemEncoded, 0);
+                            
+    //                     }
+                        
+    //                 });
+    //             }
+    //         });
+    //         clearInterval(searchForButton);
+    //         }
+    //     }, 1000);
+    // })();
+};
+
+$smcT5.CustomScripts.DynamicBasketReady = function(){
+    var cookie = $smcT5.CookieManager.read('smc_dyn_item_code');
+    
+    return cookie ? true : false;
+}
+
+					} catch(e) {
+						console.error("CustomScripts Error: ", e);
+					}
+				}
+			});
+		});
+	} catch(e) {
+		console.log(e);
+	}
+}(window, document));
+
